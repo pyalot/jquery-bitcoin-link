@@ -18,6 +18,12 @@ Features
  * Link to blockchain
  * Link to open with the bitcoin protocol
 
+Example
+-------
+
+ * Source: https://github.com/pyalot/jquery-bitcoin-link/blob/master/index.html
+ * Live: http://codeflow.org/bitcoin/link/
+
 Dependencies
 ------------
 
