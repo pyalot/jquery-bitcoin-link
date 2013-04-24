@@ -11,6 +11,16 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Jquery-bitcoin-link by pyalot</title>
+        
+    <link rel="stylesheet" href="stylesheets/bitcoin-link.css"></link>
+    <script src="javascripts/jquery-1.9.1.min.js"></script>
+    <script src="javascripts/jquery.qrcode.min.js"></script>
+    <script src="javascripts/jquery.bitcoin-link.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('a').bitcoinLink()
+        });
+    </script>
   </head>
 
   <body>
@@ -37,7 +47,7 @@
 
 <h2>Like it?</h2>
 
-<p>Send me some bitcoins: 14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp</p>
+<a class="bitcoin-address" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Send me some bitcoins</a>
 
 <h2>Features</h2>
 
@@ -48,7 +58,24 @@
 <li>Bitcoin Address</li>
 <li>Link to blockchain</li>
 <li>Link to open with the bitcoin protocol</li>
-</ul><h2>Dependencies</h2>
+</ul>
+
+<h2>Examples</h2>
+
+<p>
+    <a href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Simple Link</a>
+</p>
+<p>
+    <a class="bitcoin-address" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Styled Link</a>
+</p>
+<p>
+    <a class="bitcoin-address" data-amount="0.1" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Preset Amount</a>
+</p>
+<p>
+    <a class="bitcoin-address" data-amount="$10" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">USD Conversion</a>
+</p>
+
+<h2>Dependencies</h2>
 
 <p>The library depends on</p>
 
