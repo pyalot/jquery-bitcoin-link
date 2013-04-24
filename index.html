@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="res/bitcoin-link.css"></link>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.qrcode.min.js"></script>
+        <script src="jquery.bitcoin-link.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('a').bitcoinLink()
+            });
+        </script>
+        <style type="text/css">
+            pre{
+                border: 1px solid #555;
+                padding: 10px;
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Simple Link</a>
+            <pre>&lt;a href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"&gt;Simple Link&lt;/a&gt;</pre>
+        </div>
+        <div>
+            <a class="bitcoin-address" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Styled Link</a>
+            <pre>&lt;a class="bitcoin-address" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"&gt;Simple Link&lt;/a&gt;</pre>
+        </div>
+        <div>
+            <a class="bitcoin-address" data-amount="0.1" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">Preset Bitcoin Amount</a>
+            <pre>&lt;a class="bitcoin-address" data-amount="0.1" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"&gt;Simple Link&lt;/a&gt;</pre>
+        </div>
+        <div>
+            <a class="bitcoin-address" data-amount="$10" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp">USD conversion</a>
+            <pre>&lt;a class="bitcoin-address" data-amount="$10" href="bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"&gt;Simple Link&lt;/a&gt;</pre>
+        </div>
+    </body>
+</html>
