@@ -22,6 +22,7 @@ Example
 -------
 
  * Source: https://github.com/pyalot/jquery-bitcoin-link/blob/master/index.html
+ * Github pages: http://pyalot.github.io/jquery-bitcoin-link/
  * Live: http://codeflow.org/bitcoin/link/
 
 Dependencies
