@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Jquery-bitcoin-link by pyalot</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Jquery-bitcoin-link</h1>
+          <h2>JQuery Bitcoin Link plugin</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/pyalot/jquery-bitcoin-link/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/pyalot/jquery-bitcoin-link/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/pyalot/jquery-bitcoin-link" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>jquery.bitcoin-link.js</h1>
+
+<p>This library allows you to handle bitcoin links on your website.</p>
+
+<h2>Like it?</h2>
+
+<p>Send me some bitcoins: 14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Style bitcoin links, only applies to href with "bitcion:..."</li>
+<li>Provide a popup with information</li>
+<li>Displays QR-Code</li>
+<li>Bitcoin Address</li>
+<li>Link to blockchain</li>
+<li>Link to open with the bitcoin protocol</li>
+</ul><h2>Dependencies</h2>
+
+<p>The library depends on</p>
+
+<ul>
+<li>jQuery: <a href="http://jquery.com/">http://jquery.com/</a>
+</li>
+<li>jquery.qrcode: <a href="http://jeromeetienne.github.io/jquery-qrcode/">http://jeromeetienne.github.io/jquery-qrcode/</a>
+</li>
+</ul><h2>How to Use</h2>
+
+<p>Include the dependencies into the head tag on your website.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"res/bitcoin-link.css"</span><span class="nt">&gt;&lt;/link&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/jquery-1.9.1.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/jquery.qrcode.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.bitcoin-link.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Add a bitcoin link anywhere</p>
+
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bitcoin-address"</span> <span class="na">href=</span><span class="s">"bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"</span><span class="nt">&gt;</span>Styled Link<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+<p>Invoke the jQuery plugin to attach the behavior to the link</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'a'</span><span class="p">).</span><span class="nx">bitcoinLink</span><span class="p">()</span>
+</pre></div>
+
+<h2>Options</h2>
+
+<p>Add a link style with the class "bitcoin-address"</p>
+
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bitcoin-address"</span> <span class="na">href=</span><span class="s">"bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+<p>Set a bitcoin amount to display</p>
+
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">data-amount=</span><span class="s">"0.1"</span> <span class="na">href=</span><span class="s">"bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+<p>Set a USD amount to display (queries MtGox for conversion)</p>
+
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">data-amount=</span><span class="s">"$10"</span> <span class="na">href=</span><span class="s">"bitcoin:14rqCoRQcyEaoaXjc8iLwa2s7HNHGjiEjp"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+<h2>License MIT/BSD</h2>
+
+<p>Copyright (c) 2013, Florian Boesch <a href="mailto:pyalot@gmail.com">pyalot@gmail.com</a> <a href="http://codeflow.org/">http://codeflow.org/</a></p>
+
+<ul>
+<li>MIT: see license/mit</li>
+<li>BSD: see license/bsd</li>
+</ul>
+        </section>
+
+        <footer>
+          Jquery-bitcoin-link is maintained by <a href="https://github.com/pyalot">pyalot</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
