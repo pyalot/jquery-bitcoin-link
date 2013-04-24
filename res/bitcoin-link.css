@@ -10,7 +10,7 @@ div.bitcoin-link-overlay{
 div.bitcoin-link{
     font-family: sans-serif;
 
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
 
