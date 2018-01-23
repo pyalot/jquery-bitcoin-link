@@ -5,6 +5,10 @@
   $ = jQuery;
 
   openDialog = function(address, amount) {
+    
+    $('.bitcoin-link').remove(); 
+    $('.bitcoin-link-overlay').remove(); 
+    
     var buttons, container, overlay, qrsize, span, title;
     overlay = $('<div class="bitcoin-link-overlay"></div>').appendTo('body').click(function() {
       container.remove();
